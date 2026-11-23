@@ -1,54 +1,72 @@
-
 # AWS Cloud Infrastructure Lab
+
+A hands-on AWS project demonstrating practical experience with core cloud infrastructure services, networking, compute, storage, and identity management.
 
 ## Project Overview
 
-This project demonstrates hands-on experience with core AWS cloud infrastructure services. It was created as a practical learning and portfolio project.
+This project was built to gain practical experience configuring and managing AWS services through the AWS Management Console, AWS CLI, and Linux command line.
 
-The project covers infrastructure configuration, storage management, access control, networking, and static website hosting.
+The lab includes a custom VPC environment, an EC2 Linux instance, additional EBS storage, S3 object management, IAM access control, and S3 static website hosting.
 
-## AWS Services Used
+## Architecture Diagram
 
-- **Amazon VPC:** Created a custom VPC with public and private subnets, route tables, and an Internet Gateway.
-- **Amazon EC2:** Launched and connected to an EC2 Linux instance using SSH.
-- **Amazon EBS:** Attached an additional EBS volume, mounted it on Linux, and created a snapshot.
-- **Amazon S3:** Practiced object storage, bucket versioning, lifecycle configuration, and presigned URLs.
-- **AWS IAM:** Practiced users, groups, roles, and permission policies.
-- **Amazon S3 Static Website Hosting:** Hosted a static website using an S3 bucket.
+<!-- Add your architecture diagram here after confirming its exact filename -->
 
-## Project Structure
+## AWS Services Implemented
 
-| Folder | Contents |
+| AWS Service | Practical Implementation |
 |---|---|
-| 02-VPC | VPC and networking screenshots |
-| 03-EC2 | EC2 instance and SSH screenshots |
-| 04-EBS | EBS volume and snapshot screenshots |
-| 05-S3 | S3 storage and configuration screenshots |
-| 06-IAM | IAM configuration screenshots |
-| 10-Website | Static website hosting screenshots |
+| **Amazon VPC** | Custom VPC, public and private subnets, route tables, and Internet Gateway |
+| **Amazon EC2** | Linux instance deployment and SSH connectivity |
+| **Amazon EBS** | Additional volume attachment, Linux mounting, and snapshot creation |
+| **Amazon S3** | Object storage, versioning, lifecycle configuration, and presigned URLs |
+| **AWS IAM** | Users, groups, roles, and permission policies |
+| **S3 Static Website Hosting** | Static website hosting using an S3 bucket |
 
 ## Practical Work
 
-- Configured public and private network subnets.
-- Configured routing and Internet Gateway connectivity.
-- Launched and accessed a Linux EC2 instance.
+- Created a custom VPC with public and private subnets.
+- Configured route tables and Internet Gateway connectivity.
+- Launched and accessed a Linux EC2 instance using SSH.
 - Attached and mounted an additional EBS volume.
 - Created an EBS snapshot.
-- Practiced S3 object versioning and lifecycle configuration.
+- Enabled S3 bucket versioning.
+- Configured S3 lifecycle management.
 - Generated presigned URLs for S3 objects.
-- Configured IAM users, groups, roles, and policies.
+- Practiced IAM users, groups, roles, and policies.
 - Hosted a static website using Amazon S3.
 
-## Project Status
+## Repository Structure
 
-**Completed — AWS lab resources have been cleaned up after testing.**
-
-Screenshots and documentation are retained in this repository as project evidence.
+| Folder | Description |
+|---|---|
+| `Architecture/` | Project architecture diagrams |
+| `VPC/` | VPC and networking evidence |
+| `EC2/` | EC2 deployment and SSH evidence |
+| `EBS/` | EBS volume and snapshot evidence |
+| `S3/` | S3 storage and configuration evidence |
+| `IAM/` | IAM users, groups, roles, and policies |
+| `Website/` | Static website hosting evidence |
 
 ## Skills Demonstrated
 
-AWS Cloud Fundamentals, VPC Networking, EC2, Linux, SSH, EBS, S3, IAM, AWS CLI, and Static Website Hosting.
+- AWS Cloud Fundamentals
+- VPC Networking
+- EC2 Instance Management
+- Linux Administration
+- SSH Connectivity
+- EBS Storage Management
+- S3 Object Storage
+- IAM Access Management
+- AWS CLI
+- Static Website Hosting
+
+## Project Status
+
+**Completed — Lab resources cleaned up after testing.**
+
+AWS resources used during the practical exercises have been deleted to avoid unnecessary ongoing charges. Screenshots and project documentation are retained in this repository.
 
 ## Disclaimer
 
-This is a personal hands-on learning project. It is not a production deployment.
+This is a personal hands-on learning project created for educational and portfolio purposes. It is not a production deployment.
