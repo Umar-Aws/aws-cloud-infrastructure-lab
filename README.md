@@ -4,49 +4,76 @@ A hands-on AWS project demonstrating practical experience with core cloud infras
 
 ## Project Overview
 
-This project was built to gain practical experience configuring and managing AWS services through the AWS Management Console, AWS CLI, and Linux command line.
+This project was created to gain practical experience configuring and managing AWS services using the AWS Management Console, AWS CLI, and Linux command line.
 
-The lab includes a custom VPC environment, an EC2 Linux instance, additional EBS storage, S3 object management, IAM access control, and S3 static website hosting.
+The lab covers a custom VPC environment, EC2 Linux instance deployment, EBS storage management, S3 object storage, IAM access control, and S3 static website hosting.
 
 ## Architecture Diagram
 
-<!-- Add your architecture diagram here after confirming its exact filename -->
+![AWS Architecture Diagram](Architecture/01-AWS-Architecture-Diagram.png.png)
+
+## Project Overview Diagram
+
+![AWS Project Overview](Architecture/02-Project-Overview.png.png)
 
 ## AWS Services Implemented
 
 | AWS Service | Practical Implementation |
 |---|---|
-| **Amazon VPC** | Custom VPC, public and private subnets, route tables, and Internet Gateway |
-| **Amazon EC2** | Linux instance deployment and SSH connectivity |
-| **Amazon EBS** | Additional volume attachment, Linux mounting, and snapshot creation |
-| **Amazon S3** | Object storage, versioning, lifecycle configuration, and presigned URLs |
-| **AWS IAM** | Users, groups, roles, and permission policies |
-| **S3 Static Website Hosting** | Static website hosting using an S3 bucket |
+| **Amazon VPC** | Created a custom VPC with public and private subnets, route tables, and an Internet Gateway |
+| **Amazon EC2** | Launched and accessed a Linux EC2 instance using SSH |
+| **Amazon EBS** | Attached an additional EBS volume, mounted it on Linux, and created a snapshot |
+| **Amazon S3** | Practiced object storage, bucket versioning, lifecycle configuration, and presigned URLs |
+| **AWS IAM** | Practiced users, groups, roles, and permission policies |
+| **S3 Static Website Hosting** | Hosted a static website using an S3 bucket |
 
 ## Practical Work
 
-- Created a custom VPC with public and private subnets.
-- Configured route tables and Internet Gateway connectivity.
-- Launched and accessed a Linux EC2 instance using SSH.
-- Attached and mounted an additional EBS volume.
+### 1. Amazon VPC
+- Created a custom VPC with CIDR block `10.20.0.0/16`.
+- Created public and private subnets.
+- Configured route tables.
+- Attached an Internet Gateway.
+- Configured public subnet internet routing.
+
+### 2. Amazon EC2
+- Launched a Linux EC2 instance in the public subnet.
+- Configured security group access.
+- Connected to the instance using SSH.
+- Practiced basic Linux commands.
+
+### 3. Amazon EBS
+- Attached an additional EBS volume to EC2.
+- Identified and prepared the storage device in Linux.
+- Mounted the additional volume.
 - Created an EBS snapshot.
-- Enabled S3 bucket versioning.
-- Configured S3 lifecycle management.
-- Generated presigned URLs for S3 objects.
-- Practiced IAM users, groups, roles, and policies.
-- Hosted a static website using Amazon S3.
+
+### 4. Amazon S3
+- Created S3 buckets.
+- Uploaded and managed objects.
+- Enabled bucket versioning.
+- Practiced object version recovery.
+- Configured lifecycle management.
+- Generated presigned URLs.
+- Practiced static website hosting using a separate S3 bucket.
+
+### 5. AWS IAM
+- Created IAM users and groups.
+- Practiced managed and custom permission policies.
+- Created IAM roles.
+- Explored permissions and access management.
 
 ## Repository Structure
 
 | Folder | Description |
 |---|---|
-| `Architecture/` | Project architecture diagrams |
-| `VPC/` | VPC and networking evidence |
-| `EC2/` | EC2 deployment and SSH evidence |
-| `EBS/` | EBS volume and snapshot evidence |
-| `S3/` | S3 storage and configuration evidence |
+| `Architecture/` | AWS architecture and project overview diagrams |
+| `VPC/` | VPC and networking screenshots |
+| `EC2/` | EC2 instance and SSH screenshots |
+| `EBS/` | EBS volume and snapshot screenshots |
+| `S3/` | S3 storage and configuration screenshots |
 | `IAM/` | IAM users, groups, roles, and policies |
-| `Website/` | Static website hosting evidence |
+| `Website/` | S3 static website hosting screenshots |
 
 ## Skills Demonstrated
 
@@ -63,9 +90,11 @@ The lab includes a custom VPC environment, an EC2 Linux instance, additional EBS
 
 ## Project Status
 
-**Completed — Lab resources cleaned up after testing.**
+**Completed — AWS lab resources cleaned up after testing.**
 
-AWS resources used during the practical exercises have been deleted to avoid unnecessary ongoing charges. Screenshots and project documentation are retained in this repository.
+All AWS resources used during the practical exercises have been cleaned up after testing to avoid unnecessary ongoing charges.
+
+Screenshots, architecture diagrams, and project documentation are retained in this repository as evidence of the practical work.
 
 ## Disclaimer
 
